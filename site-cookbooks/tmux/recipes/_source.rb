@@ -28,7 +28,7 @@ packages = case node['platform_family']
 #             %w(libevent-dev libncurses5-dev gcc make)
            end
 
-packages.each do |name| # libeventは最新版を入れないとダメそう
+packages.each do |name| # libeventはソースから最新版を手に入れる
   package name
 end
 

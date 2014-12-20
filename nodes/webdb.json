@@ -4,7 +4,9 @@
       "recipe[apache]",
       "recipe[mysql]",
       "recipe[tmux]",
-      "recipe[gdb]"
+      "recipe[gdb]",
+      "recipe[pg-source]",
+      "recipe[pg-source::init]"
   ],
   "automatic": {
     "ipaddress": "webdb"
