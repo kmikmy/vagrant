@@ -6,7 +6,8 @@
       "recipe[tmux]",
       "recipe[gdb]",
       "recipe[pg-source]",
-      "recipe[pg-source::init]"
+      "recipe[pg-source::init]",
+      "recipe[byobu]"
   ],
   "automatic": {
     "ipaddress": "webdb"
