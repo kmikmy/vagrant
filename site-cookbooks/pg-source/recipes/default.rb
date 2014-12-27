@@ -22,6 +22,7 @@ tar_name = "postgresql-#{node['pg-source']['version']}"
 
 remote_file "#{Chef::Config['file_cache_path']}/#{tar_name}.tar.gz" do
   source "https://ftp.postgresql.org/pub/source/v#{node['pg-source']['version']}/#{tar_name}.tar.gz"
+  not_if 'which psql'
 #  notifies :run, 'bash[install_pg-source]', :immediately
 end
 
